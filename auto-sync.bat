@@ -1,5 +1,5 @@
 @echo off
-cd /d C:\C:\Users\gmerreb1003\Documents\Programacion
+cd /d %~dp0
 git add .
 git diff-index --quiet HEAD || git commit -m "Auto-sync: %date% %time%"
-git push  
+git push
